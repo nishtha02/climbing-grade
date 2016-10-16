@@ -2,12 +2,13 @@
   "name": "climbing-grade",
   "version": "1.1.1",
   "devDependencies" : {
-    "jasmine": "*"
+    "jasmine": "*",
+    "istanbul": "^0.4.5",
   },
   "description": "converts climbing grades between different systems",
   "main": "climbing-grade.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "istanbul cover jasmine"
   },
   "repository": {
     "type": "git",
