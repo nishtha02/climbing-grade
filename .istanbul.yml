@@ -1,0 +1,15 @@
+verbose: true
+instrumentation:
+    root: .
+    extensions:
+        - .js
+reporting:
+    print: summary
+    reports:
+        - lcov
+        - cobertura
+    dir: ./coverage
+    report-config:
+        cobertura: {file: cobertura-coverage.xml}
+        lcovonly: {file: lcov.info}
+        text-lcov: {file: lcov.info}
