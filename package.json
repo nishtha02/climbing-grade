@@ -8,7 +8,7 @@
   "description": "converts climbing grades between different systems",
   "main": "climbing-grade.js",
   "scripts": {
-    "test": "istanbul cover jasmine > coverage.xml"
+    "test": "istanbul cover jasmine"
   },
   "repository": {
     "type": "git",
