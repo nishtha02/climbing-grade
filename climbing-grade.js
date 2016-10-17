@@ -1,3 +1,4 @@
+// AWS.config.accessKeyId = "AKIAIPITTLTM7Z3QZVNA";  // Moved to local .aws/credentials file
 var ClimbingGrade = (function() {
   function ClimbingGrade(grade, system, options) {
     this._inputGrade = grade;
