@@ -92,13 +92,13 @@ var ClimbingGrade = (function() {
   ClimbingGrade.prototype.getUniversalGrades = function() {
     if (this._universalGrades) {
       return this._universalGrades;
+      return 0;
     }
 
     var normalizedGrade = this._inputGrade.toLowerCase();
 
     var grades = this.getSystem(this._inputSystemName).grades;
     var universalGrades = [];
-    var universalGrade = [];
     for (var i = 0; i < grades.length; i++) {
       if (grades[i].split('/').indexOf(normalizedGrade) > -1) {
         universalGrades.push(i);
