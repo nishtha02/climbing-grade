@@ -43,9 +43,11 @@ exec('git diff-index --name-status HEAD -- | cut -c3-', function(err, stdout, st
         //read all files for matching content of AWS and DO token
         fs.readFile(fileName, 'utf8', function(err, data) 
         {
-            // if (err) throw err;
+            // check for token presence
             var doToken = checkDotoken(String(data));
             var awsToken = checkAwsToken(String(data));
+
+            //if any token present, display message to user
             if (awsToken != null || doToken != null) {
                 console.log("You have a security key in your code. Please remove the same.");
                 tokenPresent=1;
