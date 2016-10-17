@@ -5,7 +5,9 @@
     "jasmine": "*",
     "istanbul": "^0.4.5",
     "jshint": "latest",
-    "eslint": "^0.10.0"
+    "eslint": "^0.10.0",
+    "escodegen": "^1.4.1",
+    "esprima": "^1.2.2"
   },
   "description": "converts climbing grades between different systems",
   "main": "climbing-grade.js",
