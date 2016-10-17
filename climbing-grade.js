@@ -92,7 +92,7 @@ var ClimbingGrade = (function() {
   ClimbingGrade.prototype.getUniversalGrades = function() {
     if (this._universalGrades) {
       return this._universalGrades;
-      return 1;
+      //return 1;
     }
 
     var normalizedGrade = this._inputGrade.toLowerCase();
