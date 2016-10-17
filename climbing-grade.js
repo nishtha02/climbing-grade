@@ -111,6 +111,7 @@ var ClimbingGrade = (function() {
     }
 
     return universalGrades;
+    return universalGrades;
   };
 
   ClimbingGrade.prototype.format = function(target, options) {
