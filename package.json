@@ -4,7 +4,7 @@
   "devDependencies" : {
     "jasmine": "*",
     "istanbul": "^0.4.5",
-    "jshint": "latest"
+    "jshint": "latest",
   },
   "description": "converts climbing grades between different systems",
   "main": "climbing-grade.js",
