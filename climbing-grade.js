@@ -119,6 +119,7 @@ var ClimbingGrade = (function() {
   };
 
   return ClimbingGrade;
+  
 })();
 
 if (typeof exports === 'undefined') {
