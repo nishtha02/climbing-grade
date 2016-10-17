@@ -5,11 +5,12 @@
     "jasmine": "*",
     "istanbul": "^0.4.5",
     "jshint": "latest",
+    "eshint": "latest"
   },
   "description": "converts climbing grades between different systems",
   "main": "climbing-grade.js",
   "scripts": {
-    "lint": "jshint --reporter checkstyle climbing-grade.js > checkstyle-result.xml",
+    "lint": "eshint --reporter checkstyle climbing-grade.js > checkstyle-result.xml",
     "test": "istanbul cover --report cobertura jasmine"
   },
   "repository": {
