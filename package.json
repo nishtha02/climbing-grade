@@ -8,6 +8,7 @@
   "description": "converts climbing grades between different systems",
   "main": "climbing-grade.js",
   "scripts": {
+    "lint": "eslint -f checkstyle server.js > checkstyle-result.xml",
     "test": "istanbul cover --report cobertura jasmine"
   },
   "repository": {
