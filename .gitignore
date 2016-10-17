@@ -1,3 +1,4 @@
 .swo
 node_modules/
 coverage/
+.eslintrc.js
