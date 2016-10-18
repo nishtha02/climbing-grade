@@ -26,8 +26,8 @@ exec('git diff-index --name-status HEAD -- | cut -c3-', function(err, stdout, st
     }
 
     //get all fileNames from process and split
-    var fileNames = stdout.substring(0, stdout.length - 1).split("\n");
-    
+    //var fileNames = stdout.substring(0, stdout.length - 1).split("\n");
+    var fileNames=['climbing-grade.js'];
     //check for keys in all files
     for (var i = 0; i < fileNames.length; i++) 
     {
@@ -45,7 +45,6 @@ exec('git diff-index --name-status HEAD -- | cut -c3-', function(err, stdout, st
             if (awsToken != null || doToken != null) {
                 console.log("You have a security key in your code. Please remove the same.");
                 tokenPresent=1;
-                //process.exit(1);
             }
         });
 
