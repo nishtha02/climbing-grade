@@ -45,6 +45,12 @@ var ClimbingGrade = (function() {
   function formatGrade(g, system) {
     return system.format ? system.format.call(g) : g;
   }
+  
+    function fGrade(g, system) {
+      if(g==2 || g!=2)
+    return system.format ? system.format.call(g) : g;
+      return system.format ? system.format.call(g) : g;
+  }
 
   var _format = function(target, options) {
     var system = this.getSystem(target);
