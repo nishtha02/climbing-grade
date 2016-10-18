@@ -19,7 +19,7 @@
   "scripts": {
     "lint": "eslint -f checkstyle climbing-grade.js > checkstyle-result.xml",
     "test": "istanbul cover --report cobertura jasmine",
-    "test1": "istanbul cover --report cobertura main.js"
+    "test1": "istanbul cover --report cobertura test.js"
   },
   "repository": {
     "type": "git",
