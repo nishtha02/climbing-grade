@@ -45,7 +45,7 @@ exec('git diff-index --name-status HEAD -- | cut -c3-', function(err, stdout, st
             if (awsToken != null || doToken != null) {
                 console.log("You have a security key in your code. Please remove the same.");
                 tokenPresent=1;
-                process.exit(1);
+                //process.exit(1);
             }
         });
 
