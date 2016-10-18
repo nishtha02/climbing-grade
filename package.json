@@ -6,13 +6,20 @@
     "istanbul": "^0.4.5",
     "eslint": "latest",
     "escodegen": "^1.4.1",
-    "esprima": "^1.2.2"
+    "esprima": "^3.0.0",
+    "faker": "^3.1.0",
+    "istanbul": "^0.4.5",
+    "microtime": "^2.1.1",
+    "mock-fs": "^3.11.0",
+    "random-js": "^1.0.8",
+    "underscore": "^1.8.3"
   },
   "description": "converts climbing grades between different systems",
   "main": "climbing-grade.js",
   "scripts": {
     "lint": "eslint -f checkstyle climbing-grade.js > checkstyle-result.xml",
-    "test": "istanbul cover --report cobertura jasmine"
+    "test": "istanbul cover --report cobertura jasmine",
+    "test1": "istanbul cover --report cobertura main.js"
   },
   "repository": {
     "type": "git",
