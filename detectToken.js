@@ -4,6 +4,8 @@ var fs = require("fs");
 
 var tokenPresent=0;
 
+//We used AWS and DO token formats for this one.
+
 //check for digital ocean token format
 function checkDotoken(content) 
 {
@@ -31,14 +33,6 @@ exec('git diff-index --name-status HEAD -- | cut -c3-', function(err, stdout, st
     {
         var fileName = fileNames[i];
         var fileExt = fileName.split('.').pop();
-
-        //check for presence of .PEM key files in code
-        if (fileExt == 'pem') 
-        {
-            console.log(".PEM key file found. Please remove the same.");
-            tokenPresent=1;
-            process.exit(1);
-        }
 
         //read all files for matching content of AWS and DO token
         fs.readFile(fileName, 'utf8', function(err, data) 
